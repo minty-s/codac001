@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ABLE – AI Tutor</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f8f4ec;
+      color: #3b2f2f;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #5e4b3c;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-text {
+      font-family: 'Gloria Hallelujah', cursive;
+      font-size: 1.8rem;
+    }
+    .chatbot-ui {
+      max-width: 600px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background-color: #fffaf2;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .chatbot-ui h2 {
+      font-family: 'Gloria Hallelujah', cursive;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    #chat-box {
+      height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      background-color: #fff;
+    }
+    form {
+      display: flex;
+      gap: 0.5rem;
+    }
+    input[type="text"] {
+      flex: 1;
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.75rem 1rem;
+      background-color: #e3b04b;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #c98c32;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #5e4b3c;
+      color: #fff;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-heading">
+      <h1 class="logo-text">ABLE</h1>
+    </div>
+    <nav>
+      <a href="index.html" style="color: white; text-decoration: none;">← Back to Home</a>
+    </nav>
+  </header>
+
+  <div class="chatbot-ui">
+    <h2>💬 Ask Your AI Tutor</h2>
+    <div id="chat-box"></div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Type your question here..." />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2025 ABLE Hackathon Project</p>
+  </footer>
+</body>
+</html>

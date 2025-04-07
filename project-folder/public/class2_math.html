@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class 2 – Maths</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo-heading" onclick="window.location.href='index.html'">
+      <img src="logo.png" alt="ABLE Logo" class="logo">
+      <h1 class="logo-text">ABLE</h1>
+    </div>
+    <p class="tagline">Maths – Class 2</p>
+  </header>
+
+  <section class="subject-section">
+    <h2>Welcome to Maths Class!</h2>
+    <div id="maths-text">
+      <p>Today, we’ll learn about integers and how to understand them using number lines.</p>
+      <div class="example-box">
+        <h3>What are Integers?</h3>
+        <ul>
+          <li>Integers include all positive and negative numbers, and zero.</li>
+          <li>Examples: -3, -2, -1, 0, 1, 2, 3</li>
+          <li>They help us understand things like temperature, money, and directions.</li>
+          <li>On a number line, numbers to the right of 0 are positive, and to the left are negative.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tts-controls">
+      <label for="rateRange">🔉 Reading Speed</label>
+      <input type="range" id="rateRange" min="0.5" max="2" value="1" step="0.1" oninput="updateRateDisplay(this.value)">
+      <span id="rateDisplay">1.0</span>
+      <br>
+      <button onclick="speakTextWithSlider()">🔊 Read with Speed</button>
+      <button onclick="speakListItems('maths-text')">🔊 Read Integers</button>
+      <button onclick="startListening()">🎤 Say an Integer</button>
+      <p id="speechOutput" class="speech-result"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 ABLE Hackathon Project</p>
+  </footer>
+</body>
+</html>

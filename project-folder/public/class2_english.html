@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class 2 – English</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo-heading" onclick="window.location.href='index.html'">
+      <img src="logo.png" alt="ABLE Logo" class="logo">
+      <h1 class="logo-text">ABLE</h1>
+    </div>
+    <p class="tagline">English – Class 2</p>
+  </header>
+
+  <section class="subject-section">
+    <h2>Welcome to English Class!</h2>
+    <div id="english-text">
+      <p>Today, we’ll learn about simple sentences and how to read them aloud.</p>
+      <div class="example-box">
+        <h3>Exercise Sentences</h3>
+        <ul>
+          <li>The cat is on the mat.</li>
+          <li>I like to read books.</li>
+          <li>She is my friend.</li>
+          <li>I get up at 5 o'clock.</li>
+
+<li>Sonia is playing in the snow. </li>
+
+<li>Raj wants to eat pizza for dinner.</li>
+
+<li>Who are you meeting today?</li>
+
+<li>Tomorrow is a working day.</li>
+
+
+        </ul>
+      </div>
+      
+    </div>
+    <div class="tts-controls">
+      <label for="rateRange">🔉 Reading Speed</label>
+      <input type="range" id="rateRange" min="0.5" max="2" value="1" step="0.1" oninput="updateRateDisplay(this.value)">
+      <span id="rateDisplay">1.0</span>
+      <br>
+      <button onclick="speakTextWithSlider()">🔊 Read with Speed</button>
+    </div>
+    
+  </section>
+
+   
+
+  <footer>
+    <p>© 2025 ABLE Hackathon Project</p>
+  </footer>
+</body>
+</html>
+
+

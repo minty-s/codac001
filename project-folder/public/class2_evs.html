@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class 2 – Environmental Science</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo-heading" onclick="window.location.href='index.html'">
+      <img src="logo.png" alt="ABLE Logo" class="logo">
+      <h1 class="logo-text">ABLE</h1>
+    </div>
+    <p class="tagline">EVS – Class 2</p>
+  </header>
+
+  <section class="subject-section">
+    <h2>Welcome to EVS Class!</h2>
+    <div id="english-text">
+      <p>Today, we’ll learn about the different parts of a plant and their functions.</p>
+      <div class="example-box">
+        <h3>🌱 Parts of a Plant</h3>
+
+        <h4>🌿 Roots</h4>
+        <ul>
+          <li>Hold the plant firmly in the soil.</li>
+          <li>Absorb water and minerals from the ground.</li>
+          <li>Help store food in some plants like carrots and radishes.</li>
+        </ul>
+
+        <h4>🌳 Stem</h4>
+        <ul>
+          <li>Supports the plant and keeps it upright.</li>
+          <li>Carries water and nutrients from the roots to other parts.</li>
+          <li>Transports food made by the leaves to other parts of the plant.</li>
+        </ul>
+
+        <h4>🍃 Leaves</h4>
+        <ul>
+          <li>Known as the "kitchen" of the plant.</li>
+          <li>Make food through a process called photosynthesis using sunlight, water, and air.</li>
+          <li>Release oxygen into the air which we breathe.</li>
+        </ul>
+
+        <h4>🌸 Flowers</h4>
+        <ul>
+          <li>The most colorful and attractive part of the plant.</li>
+          <li>Help the plant reproduce by making seeds.</li>
+          <li>Attract bees, butterflies, and other pollinators.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tts-controls">
+      <label for="rateRange">🔉 Reading Speed</label>
+      <input type="range" id="rateRange" min="0.5" max="2" value="1" step="0.1" oninput="updateRateDisplay(this.value)">
+      <span id="rateDisplay">1.0</span>
+      <br>
+      <button onclick="speakTextWithSlider()">🔊 Read with Speed</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 ABLE Hackathon Project</p>
+  </footer>
+</body>
+</html>

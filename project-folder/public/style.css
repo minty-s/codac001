@@ -1,0 +1,407 @@
+/* Add this at the very top of your CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('hhttps://i.pinimg.com/736x/20/5a/4d/205a4db3b29fefc37ddcdd67208180b6.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  
+  
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: 	rgb(123, 63, 0);
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+
+.logo-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.logo-text {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 3rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 4rem; /* <-- Add this line */
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.carousel-track {
+  display: flex;
+  animation: scrollCarousel 100s linear infinite;
+  width: fit-content;
+}
+
+.carousel img {
+  width: 900px;
+  height: 300px;
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: opacity 0.5s;
+}
+
+@keyframes scrollCarousel {
+  0% { transform: translateX(0); }
+  5% { transform: translateX(-900px); }
+  10% { transform: translateX(-1800px); }
+  15% { transform: translateX(-2700px); }
+  20% { transform: translateX(-3600px); }
+  25% { transform: translateX(-4500px); }
+  30% { transform: translateX(-5400px); }
+  35% { transform: translateX(-6300px); }
+  40% { transform: translateX(-7200px); }
+  45% { transform: translateX(-8100px); }
+  50% { transform: translateX(-9000px); }
+  55% { transform: translateX(-9900px); }
+  60% { transform: translateX(-10800px); }
+  65% { transform: translateX(-11700px); }
+  70% { transform: translateX(-12600px); }
+  75% { transform: translateX(-13500px); }
+  80% { transform: translateX(-14400px); }
+  85% { transform: translateX(-15300px); }
+  90% { transform: translateX(-16200px); }
+  95% { transform: translateX(-17100px); }
+  100% { transform: translateX(0); }
+}
+
+
+
+
+
+
+/* Make each box occupy ~45% of the width on larger screens */
+.class-box,
+.about {
+  flex: 1 1 45%;
+  background-color: rgba(101, 67, 33, 0.6);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.class-box h3 {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+}
+
+
+  .class-btn {
+    background-color: #b55a2a;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .class-btn:hover {
+    background-color: #d06d3d;
+  }
+  
+  
+  .class-btn:hover {
+    background-color: #A0522D; /* Sienna */
+  }
+  
+}
+
+.class-btn:hover {
+  background-color: #d06d3d;
+}
+
+
+.about h2 {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+/* Navigation */
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #E97451;
+  padding: 0.8rem 2rem;
+  border-radius: 50px; /* Long rounded corners */
+  margin-top: 1rem;
+}
+
+.nav-wrapper a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 20px;
+}
+
+.nav-wrapper a:hover {
+  background-color: #ffcc70;
+  color: #000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color:rgba(101, 67, 33, 0.6);
+  padding: 0.8rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc70;
+}
+
+.tts-controls {
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.tts-controls label,
+.tts-controls input,
+.tts-controls span,
+.tts-controls button {
+  margin: 5px;
+}
+.example-box {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box; /* 🔥 This line is key! */
+  background-color: #fce8c2;
+  border: 2px solid #d8b384;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #3b2f2f;
+}
+
+
+
+.example-box h3 {
+  font-size: 1.6em;
+  color: #5a3e1b;
+  margin-bottom: 10px;
+}
+
+.example-box h4 {
+  margin-top: 15px;
+  font-size: 1.3em;
+}
+
+.example-box li {
+  margin-left: 20px;
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
+.chatbot-box {
+  margin-top: 40px;
+  background-color: #fff4da;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #e0c387;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#chat-log {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+#user-input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+  font-size: 1em;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #6b3e26;
+  background-color: #f5deb3;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #e0c089;
+}
+
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: #ffcc66;
+  border: none;
+  cursor: pointer;
+}
+
+#chat-box {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background: #fff8f0;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.message {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+
+/* Sections */
+section {
+  padding: 2rem;
+  background-color:rgba(101, 67, 33, 0.6);
+  margin: 1rem;
+  border-radius: 12px;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #A0522D;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffd98e;
+}
+
+#output {
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(101, 67, 33, 0.6);
+  color: #aaa;
+  font-size: 0.9rem;
+}
